@@ -51,11 +51,25 @@ docker inspect
 
 docker ps
 
-docker run <image_name / image_id>
+docker run <image_name>
 
 docker start <image_name / image_id>
 
 docker stop <image_name / image_id>
+
+docker pause <image_name / image_id>
+
+docker unpause <image_name / image_id>
+
+docker top <image_name / image_id>
+
+docker stats <image_name / image_id>
+
+docker rm <image_name / image_id>
+
+docker kill <image_name / image_id>
+
+docker history <image_name / image_id>
 
 
 # Docker system 
@@ -65,4 +79,36 @@ docker stats
 docker system df
 
 docker system prune
+
+
+# Dockerfile
+
+FROM
+
+RUN
+
+CMD
+
+
+# Docker compose Installation
+
+pip install -U docker-compose
+
+
+# docker-compose 
+
+Create docker-compose.yml
+
+docker-compose config
+
+docker-compose up -d
+
+ docker-compose down
+ 
+ —scale
+docker-compose up -d --scale database=4
+
+
+
+
 
